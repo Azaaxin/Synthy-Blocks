@@ -3,5 +3,4 @@ This is a Synth built in Javascript and HTML! It has Midi input support and few 
 
 Twist the knobs and start playing! The effects are CPU heavy so if it start lagging just reload the page.
 
-https://ludvigolausson.se/emp
-
+https://ludvigolausson.se/emp/
