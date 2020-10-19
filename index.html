@@ -2,37 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Simple Midi synth in your webbrowser">
+    <meta name="keywords" content="MIDI Synth Online">
+    <meta name="author" content="Ludvig Olausson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/nexusui@latest/dist/NexusUI.js"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-    <title>Document</title>
-    <style>
-      .osc{
-        display: flex;
-        margin: 0px 30px 45px 30px;
-      }
-      .osc > * {
-        margin: 5px;
-      }
-      body{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      .row{
-        display: flex;
-        flex-direction: row;
-        margin:20px;
-      }
-      .row > *{
-        margin: 5px;
-      }
-    </style>
+    <title>EMP. - Synth By Azaaxin</title>
+   <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="teal lighten-3">
-    <div id="name"> Oscillator 1</div>
+    <div class="wrapper">
+      <div class="logo">EMP. 
+        <div class="preset_loader">
+          <label>Preset:</label>
+          <select>
+            <option>Default</option>
+            <option>Empty</option>
+            <option>Empty</option>
+            <option>Empty</option>
+          </select>
+        </div>
+      </div>
+    <div class="name"> Oscillator 1</div>
       <div class="osc">
         <div class="row">
         <div id="decay1">Decay</div>
@@ -45,11 +36,9 @@
         <div id="dist1">Distortion</div>
         <div id="lfo1">LFO</div>
         <div id="reverb1">Reverb</div>
-
       </div>
     </div>
-    <div id="name"> Oscillator 2</div>
-
+    <div class="name"> Oscillator 2</div>
     <div class="osc">
       <div class="row">
         <div id="decay2">Decay</div>
@@ -63,12 +52,9 @@
         <div id="lfo2">LFO</div>
         <div id="reverb2">Reverb</div>
       </div>
-    
     </div>
-
-
     <div id="target"></div>
-
+  </div>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.62/Tone.js"
@@ -76,12 +62,8 @@
     crossorigin="anonymous"
   ></script> 
   <script src="scripts/webmidi.min.js"></script>
-
   <script src="scripts/scripts.js"></script>
   <script src="scripts/osc1.js"></script>
   <script src="scripts/osc2.js"></script>
   <script src="scripts/midi.js"></script>
-
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
-
 </html>

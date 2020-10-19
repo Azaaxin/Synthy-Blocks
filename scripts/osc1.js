@@ -13,7 +13,7 @@ synth1 = new Tone.FMSynth({
         release: 0,
       },
       
-  }).toMaster();
+  }).toDestination();
 
 piano.on('change',function(keyValue) {
     if (keyValue.state == true) { // If Key is down
@@ -29,7 +29,6 @@ function midiNote(note, vel){
         piano.toggleKey(note, false)
     }
 }
-
 //filters
 function updateFilter1(){
     var filter1 = new Tone.AutoFilter(filter1_1).start(); //LFO
@@ -38,7 +37,6 @@ function updateFilter1(){
     // connect the player to the filter, distortion and then to the master output
     synth1.chain(filter1, distortion1, reverb1, Tone.Destination);
 }
-
 
 // Controls
 var sus1_d = new Nexus.Dial('#sustain1', dial_settings1)

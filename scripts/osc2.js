@@ -12,8 +12,7 @@ synth2 = new Tone.FMSynth({
         sustain: 0,
         release: 0,
       },
-      
-  }).toMaster();
+  }).toDestination();
 
 piano.on('change',function(keyValue) {
     if (keyValue.state == true) { // If Key is down
@@ -67,7 +66,6 @@ rel2_d.on('change',function(value) {
 select2.on('change',function(value) {
     synth2.oscillator.type = value.value;
 });
-
 //Effect knobs 
 dist2.on('change',function(value) {
     dist2_2 = value.toFixed(1);

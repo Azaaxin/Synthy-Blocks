@@ -1,6 +1,6 @@
 //Piano roll 
 var piano = new Nexus.Piano('#target',{
-    'size': [750,125],
+    'size': [850,125],
     'mode': 'button',  // 'button', 'toggle', or 'impulse'
     'lowNote': 24,
     'highNote': 100
